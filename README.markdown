@@ -13,10 +13,10 @@ Ruby:
     Numero.valid_number?('194512') #=> false
 
 
-Rails Validations:
+Rails:
 
     class User < ActiveRecord::Base
-      include Numero::Rails::Validations
+      acts_as_numero :number
     end
 
     u = User.new(:number => '1234')

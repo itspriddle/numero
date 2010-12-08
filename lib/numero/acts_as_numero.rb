@@ -22,15 +22,16 @@ module Numero
     module Validations
       def self.included(base)
         base.class_eval do
+          column = Numero::ActsAsNumero.numero_column
           if RAILS3
-            validates :number,
+            validates column,
               :presence     => true,
               :numericality => { :allow_blank => true },
               :format       => { :with => Numero::VALID_PHONE_NUMBER }
           else
-            validates_presence_of       :number
-            validates_numericality_of   :number, :allow_blank => true
-            validates_format_of         :number, :with => Numero::VALID_PHONE_NUMBER
+            validates_presence_of     column
+            validates_numericality_of column, :allow_blank => true
+            validates_format_of       column, :with => Numero::VALID_PHONE_NUMBER
           end
         end
       end
