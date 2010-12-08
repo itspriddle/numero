@@ -1,0 +1,1 @@
+require 'numero/rails'
