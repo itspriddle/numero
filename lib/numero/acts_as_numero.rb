@@ -1,6 +1,6 @@
 module Numero
   module ActsAsNumero
-    RAILS3 = (Rails.version || RAILS_GEM_VERSION).split('.').first.to_i
+    RAILS3 = (Rails.version || RAILS_GEM_VERSION).split('.').first.to_i == 3
 
     class << self
       attr_accessor :numero_column
