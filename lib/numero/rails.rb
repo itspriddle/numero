@@ -19,3 +19,5 @@ module Numero
     end
   end
 end
+
+require 'numero/rails/acts_as_numero'
