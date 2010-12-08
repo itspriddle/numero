@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version          = Numero::Version
   s.date             = Time.now.strftime('%Y-%m-%d')
   s.summary          = 'Numero: Phone number validation for Ruby/Rails'
-  s.homepage         = 'http://github.com/itspriddle/numer'
+  s.homepage         = 'http://github.com/itspriddle/numero'
   s.authors          = ['Joshua Priddle']
   s.email            = 'jpriddle@nevercraft.net'
 
